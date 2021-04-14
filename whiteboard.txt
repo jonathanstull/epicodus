@@ -1,0 +1,46 @@
+Characters
+Student
+-vitality (health)
+-experience (level)
+-resilience (armor)
+-skill (damage)
+
+Monsters
+-type (minion/boss)
+-vitality
+-resilience
+-skill
+-debuffs (reduce resilience)
+-experienceWorth
+Code Review - boss
+Imposter Syndrome
+Concepts
+
+Sages
+-raise vitality
+-raise resilience
+-raise skill
+Instructor
+Advisor
+Mentor
+
+Items
+-type
+-amount
+Testing
+Growth Mindset
+Getting enough sleep
+Coffee
+
+Environment
+Levels could be the week with code review at the end or something
+-23 Levels
+--each level is a set of rooms; explore rooms to find items and monsters
+--rooms are hollowed out of a volcano (Mount Learn How To Program)
+--getting item from sage causes sage to be captured by a monster; character must find the room their in to battle the monster and free the sage
+-some items are freely available (coffee, sleep) that characters can use
+-some items must come from sages (testing, growth mindset) that characters must buy/learn
+-characters use their skill and items against Monsters
+-victory over monsters leads to gaining a level of experience
+-successfully completing all 23 levels means you graduate and get a job
+
