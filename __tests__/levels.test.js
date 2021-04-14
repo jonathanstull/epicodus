@@ -16,13 +16,14 @@ describe('Level', () => {
     expect(reusableLevel.battle).toEqual({});
     expect(reusableLevel.office).toEqual({});
     expect(reusableLevel.marchQuestions).toEqual({});
+    expect(reusableLevel.roomId).toEqual(0);
   });
 
   it('should add room object to appropriate attribute according to type', () => {
     let room = {type: "office"};
     reusableLevel.addRoom(room);
     expect(reusableLevel.battle).toEqual({});
-    expect(reusableLevel.office).toEqual({{type: "office"}});
+    expect(reusableLevel.office).toEqual({1:{id: 1, type: "office"}});
     expect(reusableLevel.marchQuestions).toEqual({});
-  })
+  });
 });
