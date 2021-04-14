@@ -17,5 +17,10 @@ export default class Character {
     if (experience >= 100){
       this.level += 1;
       this.experience = experience - 100;
-  }}
+    }
+  }
+
+  takeDamage(amountDamaged){
+    this.vitality -= amountDamaged;
+  }
 }

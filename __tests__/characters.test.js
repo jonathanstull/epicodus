@@ -30,5 +30,10 @@ describe('Character', () => {
   it('should reduce the character vitality attribute by the number given', () => {
     reusableCharacter.takeDamage(10);
     expect(reusableCharacter.vitality).toEqual(90);
-  })
+  });
+
+  it('should raise a skill level by a given number of points', () => {
+    reusableCharacter.raiseDamage(15);
+    expect(reusableCharacter.damage).toEqual(315);
+  });
 });
