@@ -12,4 +12,8 @@ describe('Sage constructor and methods', () => {
     expect(reusableSage.amount).toEqual(10);
   });
   
+  it('should toggle between a free and captured status of the sage', () => {
+    reusableSage.toggleCapture();
+    expect(reusableSage.status).toBe(true);
+  });
 });

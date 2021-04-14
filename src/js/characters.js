@@ -28,4 +28,8 @@ export default class Character {
   raiseDamage(amountIncreased) {
     this.damage += amountIncreased;
   }
+
+  addItem(itemObject) {
+    this.inventory.push(itemObject);
+  }
 }
