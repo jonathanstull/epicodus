@@ -15,6 +15,7 @@ describe('Character', () => {
     expect(reusableCharacter.armor).toEqual(100);
     expect(reusableCharacter.damage).toEqual(300);
     expect(reusableCharacter.inventory).toEqual([]);
+    expect(reusableCharacter.itemId).toEqual(0);
   });
 
   it('should "kill" the character when vitality equals zero', () => {
@@ -47,5 +48,5 @@ describe('Character', () => {
   it('should increment the itemId attribute by one and return that number', () => {
     const idNumber = reusableCharacter.assignId();
     expect(idNumber).toEqual(1);
-  })
+  });
 });

@@ -35,6 +35,8 @@ Getting enough sleep
 Coffee
 
 Environment
+Levels: {rooms: {items: monsters: sages:}}
+-leave room (direction?)
 Levels could be the week with code review at the end or something
 -23 Levels
 --each level is a set of rooms; explore rooms to find items and monsters
@@ -46,3 +48,10 @@ Levels could be the week with code review at the end or something
 -victory over monsters leads to gaining a level of experience
 -successfully completing all 23 levels means you graduate and get a job
 
+room
+-items: {} or []
+-monsters: {} or []
+-sages:  {} or []
+-start battle
+-pickup item
+-talk to sage

@@ -7,6 +7,7 @@ export default class Character {
     this.armor = armor;
     this.damage = damage;
     this.inventory = [];
+    this.itemId = 0;
   }
 
   die() {
@@ -31,5 +32,10 @@ export default class Character {
 
   addItem(itemObject) {
     this.inventory.push(itemObject);
+  }
+
+  assignId(){
+    this.itemId += 1;
+    return this.itemId;
   }
 }
