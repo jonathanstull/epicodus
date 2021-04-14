@@ -20,4 +20,9 @@ describe('Monster', () => {
     reusableMonster.takeDamage(10);
     expect(reusableMonster.vitality).toEqual(90);
   });
+
+  it('should "kill" the monster when vitality equals zero', () => {
+    reusableMonster.die();
+    expect(reusableMonster.vitality).toEqual(0);
+  });
 });
