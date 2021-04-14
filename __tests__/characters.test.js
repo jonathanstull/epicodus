@@ -22,7 +22,13 @@ describe('Character', () => {
   });
 
   it('should level-up when experience reaches 100', () => {
+    reusableCharacter.experience = 101;
     reusableCharacter.levelUp();
     expect(reusableCharacter.level).toEqual(6);
   });
+
+  it('should reduce the character vitality attribute by the number given', () => {
+    reusableCharacter.takeDamage(10);
+    expect(reusableCharacter.vitality).toEqual(90);
+  })
 });

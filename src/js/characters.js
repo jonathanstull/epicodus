@@ -11,4 +11,11 @@ export default class Character {
   die() {
     this.vitality = 0;
   }
+
+  levelUp(){
+    let experience = this.experience;
+    if (experience >= 100){
+      this.level += 1;
+      this.experience = experience - 100;
+  }}
 }
