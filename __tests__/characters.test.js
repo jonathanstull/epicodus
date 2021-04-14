@@ -15,4 +15,9 @@ describe('Character', () => {
     expect(reusableCharacter.armor).toEqual(100);
     expect(reusableCharacter.damage).toEqual(300);
   });
+
+  it('should "kill" the character when vitality equals zero', () => {
+    reusableCharacter.die();
+    expect(reusableCharacter.vitality).toEqual(0);
+  });
 });
