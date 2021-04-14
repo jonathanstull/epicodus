@@ -20,4 +20,9 @@ describe('Character', () => {
     reusableCharacter.die();
     expect(reusableCharacter.vitality).toEqual(0);
   });
+
+  it('should level-up when experience reaches 100', () => {
+    reusableCharacter.levelUp();
+    expect(reusableCharacter.level).toEqual(6);
+  });
 });

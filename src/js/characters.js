@@ -7,4 +7,8 @@ export default class Character {
     this.armor = armor;
     this.damage = damage;
   }
+
+  die() {
+    this.vitality = 0;
+  }
 }
