@@ -10,10 +10,11 @@ describe('Sage constructor and methods', () => {
   test('should create a sage object with two attributes', () => {
     expect(reusableSage.type).toEqual("skill");
     expect(reusableSage.amount).toEqual(10);
+    expect(reusableSage.captureStatus).toBe(false);
   });
   
   it('should toggle between a free and captured status of the sage', () => {
     reusableSage.toggleCapture();
-    expect(reusableSage.status).toBe(true);
+    expect(reusableSage.captureStatus).toBe(false);
   });
 });
