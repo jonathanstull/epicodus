@@ -15,4 +15,9 @@ describe('Monster', () => {
     expect(reusableMonster.skill).toEqual(40);
     expect(reusableMonster.experienceWorth).toEqual(1);
   });
+
+  it('should reduce the monster vitality attribute by the number given', () => {
+    reusableMonster.takeDamage(10);
+    expect(reusableMonster.vitality).toEqual(90);
+  });
 });

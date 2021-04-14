@@ -11,4 +11,5 @@ describe('Sage constructor and methods', () => {
     expect(reusableSage.type).toEqual("skill");
     expect(reusableSage.amount).toEqual(10);
   });
+  
 });

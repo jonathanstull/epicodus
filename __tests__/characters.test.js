@@ -36,4 +36,6 @@ describe('Character', () => {
     reusableCharacter.raiseDamage(15);
     expect(reusableCharacter.damage).toEqual(315);
   });
+
+  
 });

@@ -23,4 +23,8 @@ export default class Character {
   takeDamage(amountDamaged){
     this.vitality -= amountDamaged;
   }
+
+  raiseDamage(amountIncreased) {
+    this.damage += amountIncreased;
+  }
 }
