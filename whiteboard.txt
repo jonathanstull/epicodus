@@ -20,6 +20,8 @@ Sages
 -raise vitality
 -raise resilience
 -raise skill
+-type
+-amount
 Instructor
 Advisor
 Mentor
