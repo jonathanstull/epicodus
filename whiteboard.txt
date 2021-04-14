@@ -10,7 +10,7 @@ Monsters
 -vitality
 -resilience
 -skill
--debuffs (reduce resilience)
+-debuffs (reduce resili.ence)
 -experienceWorth
 Code Review - boss
 Imposter Syndrome

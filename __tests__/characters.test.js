@@ -1,8 +1,8 @@
 import Character from './../src/js/characters.js';
 
-describe('Character', (vitality, experience, level, armor, damage) => {
+describe('Character', () => {
 
-  let reusableCharacter = new Character(vitality, experience, level, armor, damage);
+  let reusableCharacter;
 
   beforeEach(() => {
     reusableCharacter = new Character(100, 20, 5, 100, 300);
