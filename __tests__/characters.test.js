@@ -43,4 +43,9 @@ describe('Character', () => {
     reusableCharacter.addItem(itemToAdd);
     expect(reusableCharacter.inventory).toEqual([{type: "armor", amount: 2}]);
   });
+
+  it('should increment the itemId attribute by one and return that number', () => {
+    const idNumber = reusableCharacter.assignId();
+    expect(idNumber).toEqual(1);
+  })
 });

@@ -11,4 +11,8 @@ export default class Monster {
   takeDamage(amountDamaged){
     this.vitality -= amountDamaged;
   }
+
+  die(){
+    this.vitality = 0;
+  }
 }
