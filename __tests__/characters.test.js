@@ -14,6 +14,7 @@ describe('Character', () => {
     expect(reusableCharacter.level).toEqual(5);
     expect(reusableCharacter.armor).toEqual(100);
     expect(reusableCharacter.damage).toEqual(300);
+    expect(reusableCharacter.inventory).toEqual([]);
   });
 
   it('should "kill" the character when vitality equals zero', () => {
@@ -37,5 +38,9 @@ describe('Character', () => {
     expect(reusableCharacter.damage).toEqual(315);
   });
 
-  
+  it('should add an item object to the inventory attribute', () => {
+    const itemToAdd = {type: "armor", amount: 2};
+    reusableCharacter.addItem(itemToAdd);
+    expect(reusableCharacter.inventory).toEqual([{type: "armor", amount: 2}]);
+  });
 });

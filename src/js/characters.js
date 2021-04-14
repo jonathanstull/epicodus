@@ -6,6 +6,7 @@ export default class Character {
     this.level = level;
     this.armor = armor;
     this.damage = damage;
+    this.inventory = [];
   }
 
   die() {

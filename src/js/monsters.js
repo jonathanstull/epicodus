@@ -7,4 +7,8 @@ export default class Monster {
     this.skill = skill;
     this.experienceWorth = experienceWorth;
   }
+
+  takeDamage(amountDamaged){
+    this.vitality -= amountDamaged;
+  }
 }
