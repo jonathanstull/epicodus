@@ -30,7 +30,7 @@ describe('Room', () => {
     let monster = new Monster("boss", 100, 100, 5, 1);
     reusableRoom.monsters.set(1, monster);
     reusableRoom.battle(character);
-    expect(monster.vitality).toEqual(90);
-    expect(character.vitality).toEqual(90);
+    expect(monster.vitality).toEqual(94);
+    expect(character.vitality).toEqual(95);
   });
 });

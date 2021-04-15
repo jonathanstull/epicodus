@@ -19,5 +19,9 @@ export default class Level {
       this.marchQuestions[roomObject.id] = roomObject;
     }
   }
+
+  changeSageRoom(currentRoomId, nextRoomId){
+    
+  }
 }
 

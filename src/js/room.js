@@ -18,7 +18,10 @@ export default class Room {
   }
 
   battle(character) {
-    this.monsters.get(1).takeDamage(10);
-    character.takeDamage(10);
+    let monster = this.monsters.get(1);
+    let monsterHitsFor = monster.skill;
+    let characterHitsFor = character.damage;
+    monster.takeDamage(characterHitsFor);
+    character.takeDamage(monsterHitsFor);
   }
 }
