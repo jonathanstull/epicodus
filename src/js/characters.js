@@ -35,7 +35,9 @@ export default class Character {
   }
 
   dropItem(itemObject) {
-    
+    //find the index of the item return one index -> findIndex
+    //remove the item at that index -> splice
+    this.inventory.splice(0,1);
   }
 
   assignId(){

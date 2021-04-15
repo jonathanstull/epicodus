@@ -50,7 +50,7 @@ describe('Character', () => {
     const itemToDrop = {type: "armor", amount: 2};
     reusableCharacter.dropItem(itemToDrop);
     expect(reusableCharacter.inventory).toEqual([]);
-  }
+  });
 
   it('should increment the itemId attribute by one and return that number', () => {
     const idNumber = reusableCharacter.assignId();
