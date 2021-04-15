@@ -1,9 +1,9 @@
 export default class Monster {
 
-  constructor(type, vitality, resilience, skill, experienceWorth) {
+  constructor(type, vitality, armor, skill, experienceWorth) {
     this.type = type;
     this.vitality = vitality;
-    this.resilience = resilience;
+    this.armor = armor;
     this.skill = skill;
     this.experienceWorth = experienceWorth;
   }

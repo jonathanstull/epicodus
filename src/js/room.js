@@ -16,4 +16,8 @@ export default class Room {
       this.characterIn = true;
     }
   }
+
+  battle(character) {
+
+  }
 }
