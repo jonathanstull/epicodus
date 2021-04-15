@@ -9,12 +9,13 @@ describe('Character', () => {
   });
 
   it('should construct a new character with five attributes', () => {
+    const emptyMap = new Map();
     expect(reusableCharacter.vitality).toEqual(100);
     expect(reusableCharacter.experience).toEqual(20);
     expect(reusableCharacter.level).toEqual(5);
     expect(reusableCharacter.armor).toEqual(100);
     expect(reusableCharacter.damage).toEqual(300);
-    expect(reusableCharacter.inventory).toEqual([]);
+    expect(reusableCharacter.inventory).toEqual(emptyMap);
     expect(reusableCharacter.itemId).toEqual(0);
   });
 
@@ -41,15 +42,18 @@ describe('Character', () => {
 
   it('should add an item object to the inventory attribute', () => {
     const itemToAdd = {type: "armor", amount: 2};
+    let itemMap = new Map([[1, itemToAdd]]);
     reusableCharacter.addItem(itemToAdd);
-    expect(reusableCharacter.inventory).toEqual([{type: "armor", amount: 2}]);
+    expect(reusableCharacter.inventory).toEqual(itemMap);
   });
 
   it('should drop an item from the characters inventory', () => {
-    reusableCharacter.inventory = [{type:"armor", amount: 2}];
-    const itemToDrop = {type: "armor", amount: 2};
-    reusableCharacter.dropItem(itemToDrop);
-    expect(reusableCharacter.inventory).toEqual([]);
+    const emptyMap = new Map();
+    let itemMap = new Map([[1,{type: "armor", amount: 2}]]);
+    reusableCharacter.inventory = itemMap;
+    const itemId = 1;
+    reusableCharacter.dropItem(itemId);
+    expect(reusableCharacter.inventory).toEqual(emptyMap);
   });
 
   it('should increment the itemId attribute by one and return that number', () => {

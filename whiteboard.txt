@@ -1,3 +1,4 @@
+
 Characters
 Student
 -vitality (health)
@@ -49,9 +50,15 @@ Levels could be the week with code review at the end or something
 -successfully completing all 23 levels means you graduate and get a job
 
 room
--items: {} or []
--monsters: {} or []
--sages:  {} or []
+-items: {} or [] map
+-monsters: {} or [] map
+-sages:  {} or [] map
+-exits: {} map
 -start battle
+--sage would leave the current room (office)
+--reset the status of the sage to captured
+--add monster to battle room
+--character would have to enter the battle room
+--some sort of damage would be "exchanged", i.e., passed from the room to the character/monster
 -pickup item
 -talk to sage

@@ -27,3 +27,20 @@ describe('Level', () => {
     expect(reusableLevel.marchQuestions).toEqual({});
   });
 });
+
+describe('Room', () => {
+  let reusableRoom;
+  
+  beforeEach(() => {
+    reusableRoom = new Room("battle");
+  });
+
+  it('should create a room object with five attributes', () => {
+    const emptyMap = new Map();
+    expect(reusableRoom.type).toEqual("battle");
+    expect(reusableRoom.monsters).toEqual(emptyMap);
+    expect(reusableRoom.sages).toEqual(emptyMap);
+    expect(reusableRoom.items).toEqual(emptyMap);
+    expect(reusableRoom.exits).toEqual(emptyMap);
+  });
+});

@@ -6,7 +6,7 @@ export default class Character {
     this.level = level;
     this.armor = armor;
     this.damage = damage;
-    this.inventory = [];
+    this.inventory = new Map();
     this.itemId = 0;
   }
 
@@ -31,17 +31,16 @@ export default class Character {
   }
 
   addItem(itemObject) {
-    this.inventory.push(itemObject);
+    this.inventory.set(this.assignId(), itemObject);
   }
 
-  dropItem(itemObject) {
-    //find the index of the item return one index -> findIndex
-    //remove the item at that index -> splice
-    this.inventory.splice(0,1);
+  dropItem(itemId) {
+    let inventory = this.inventory;
+    inventory.delete(itemId);
   }
 
   assignId(){
     this.itemId += 1;
     return this.itemId;
   }
-}
+} 
