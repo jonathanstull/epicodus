@@ -10,7 +10,10 @@ export default class Room {
   }
 
   toggleRoomStatus() {
-    
+    if (this.characterIn === true) {
+      this.characterIn = false;
+    } else if (this.CharacterIn === false) {
+      this.characterIn = true;
+    }
   }
-
 }
