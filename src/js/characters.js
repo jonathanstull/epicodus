@@ -34,6 +34,10 @@ export default class Character {
     this.inventory.push(itemObject);
   }
 
+  dropItem(itemObject) {
+    
+  }
+
   assignId(){
     this.itemId += 1;
     return this.itemId;

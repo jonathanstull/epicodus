@@ -45,6 +45,13 @@ describe('Character', () => {
     expect(reusableCharacter.inventory).toEqual([{type: "armor", amount: 2}]);
   });
 
+  it('should drop an item from the characters inventory', () => {
+    reusableCharacter.inventory = [{type:"armor", amount: 2}];
+    const itemToDrop = {type: "armor", amount: 2};
+    reusableCharacter.dropItem(itemToDrop);
+    expect(reusableCharacter.inventory).toEqual([]);
+  }
+
   it('should increment the itemId attribute by one and return that number', () => {
     const idNumber = reusableCharacter.assignId();
     expect(idNumber).toEqual(1);
