@@ -2,6 +2,7 @@ import Character from './../src/js/characters.js';
 import Monster from './../src/js/monsters.js';
 import Sage from './../src/js/sages.js';
 import Item from './../src/js/items.js';
+import Room from './../src/js/room.js';
 import Level from './../src/js/levels.js';
 
 describe('Level', () => {
@@ -25,22 +26,5 @@ describe('Level', () => {
     expect(reusableLevel.battle).toEqual({});
     expect(reusableLevel.office).toEqual({1:{id: 1, type: "office"}});
     expect(reusableLevel.marchQuestions).toEqual({});
-  });
-});
-
-describe('Room', () => {
-  let reusableRoom;
-  
-  beforeEach(() => {
-    reusableRoom = new Room("battle");
-  });
-
-  it('should create a room object with five attributes', () => {
-    const emptyMap = new Map();
-    expect(reusableRoom.type).toEqual("battle");
-    expect(reusableRoom.monsters).toEqual(emptyMap);
-    expect(reusableRoom.sages).toEqual(emptyMap);
-    expect(reusableRoom.items).toEqual(emptyMap);
-    expect(reusableRoom.exits).toEqual(emptyMap);
   });
 });
