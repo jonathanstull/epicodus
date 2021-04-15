@@ -18,6 +18,7 @@ export default class Room {
   }
 
   battle(character) {
-
+    this.monsters.get(1).takeDamage(10);
+    character.takeDamage(10);
   }
 }
